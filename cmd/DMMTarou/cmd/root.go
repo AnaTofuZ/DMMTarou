@@ -7,6 +7,6 @@ func NewDMMTarouCmd() *cobra.Command {
 		Use: "dmmtarou",
 	}
 
-	cmd.AddCommand()
+	cmd.AddCommand(newGetCmd())
 	return cmd
 }
